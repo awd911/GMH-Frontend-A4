@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+<img [src]="imageUrl" width="300">
+
+<br>
+
+<button (click)="incrementCount()">Click to Increment View</button>
+<p>Counter: {{viewCount}}</p>
+
+<div>
+    <input type = "text" [(ngModel)]="name">
+    <p>Hello, {{name}}</p>
+</div>
+
+
+<ul>
+    <li *ngFor="let item of list">{{item}}</li>
+</ul>
